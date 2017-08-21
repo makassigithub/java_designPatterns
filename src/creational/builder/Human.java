@@ -6,7 +6,8 @@ private int age;
 
 
 
-
+// This is called a bean model design 
+// And the instance created is mutable using setters.
 public Human() {
 }
 
