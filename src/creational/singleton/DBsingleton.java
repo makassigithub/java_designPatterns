@@ -15,7 +15,13 @@ public class DBsingleton {
 	public static DBsingleton getInstance() {
 
 		if (instance == null) {
-			instance = new DBsingleton();
+			synchronized (DBsingleton.class) {
+				if (instance == null) {
+
+					instance = new DBsingleton();
+				}
+			}
+
 		}
 		return instance;
 	}
