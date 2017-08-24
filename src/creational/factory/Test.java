@@ -2,10 +2,10 @@ package creational.factory;
 
 public class Test {
   public static void main(String ...args) {
-	  Team soccerPlayers = TeamFactory.getTeam("soccer");
+	  Team soccerPlayers = TeamFactory.getTeam(TeamType.SOCCER);
 	     System.out.println(soccerPlayers.getPersons());
 	     
-	     Team constructors = TeamFactory.getTeam("construction");
+	     Team constructors = TeamFactory.getTeam(TeamType.CONSTRUCTION);
 	     System.out.println(constructors.getPersons());
   }
           /* Objects depends on the argument passed to the factory method
